@@ -4,7 +4,7 @@ import {tool} from "@langchain/core/tools";
 import {HumanMessage,SystemMessage} from "@langchain/core/messages";
 //First and foremost we have instantiated the model by the apiKey, chosen the model already
 const llm=new ChatGroq({
-    apiKey:"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",
+    apiKey:process.env.API_KEY,
     model:"llama-3.3-70b-versatile",
     temperature:1.0,// basically this controls the creativity of the model
 });
